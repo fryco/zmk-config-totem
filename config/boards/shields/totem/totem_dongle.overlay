@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2022 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include "totem.dtsi"
 
 / {
@@ -12,7 +6,6 @@
         zmk,kscan = &kscan_0;
     };
 
-    /* pusty kscan dla dongla bez fizycznej macierzy */
     kscan_0: kscan@0 {
         compatible = "zmk,kscan-none";
     };
