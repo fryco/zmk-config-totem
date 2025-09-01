@@ -8,14 +8,12 @@
 
 / {
     chosen {
-        zmk,kscan = &mock_kscan;
         wakeup-source;
+        zmk,kscan = &kscan_0;
     };
 
-    mock_kscan: kscan_1 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
+    /* pusty kscan dla dongla bez fizycznej macierzy */
+    kscan_0: kscan@0 {
+        compatible = "zmk,kscan-none";
     };
 };
